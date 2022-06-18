@@ -1,0 +1,39 @@
+pipeline package
+================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   pipeline.auxiliar_modules
+   pipeline.row_types
+   pipeline.tables
+
+Submodules
+----------
+
+pipeline.main module
+--------------------
+
+.. automodule:: pipeline.main
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.test module
+--------------------
+
+.. automodule:: pipeline.test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pipeline
+   :members:
+   :undoc-members:
+   :show-inheritance:

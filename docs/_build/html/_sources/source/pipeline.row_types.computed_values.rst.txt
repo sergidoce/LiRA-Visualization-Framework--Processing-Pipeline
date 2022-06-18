@@ -1,0 +1,69 @@
+pipeline.row\_types.computed\_values package
+============================================
+
+Submodules
+----------
+
+pipeline.row\_types.computed\_values.Acceleration module
+--------------------------------------------------------
+
+.. automodule:: pipeline.row_types.computed_values.Acceleration
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.row\_types.computed\_values.HillClimbingForce module
+-------------------------------------------------------------
+
+.. automodule:: pipeline.row_types.computed_values.HillClimbingForce
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.row\_types.computed\_values.InertialForce module
+---------------------------------------------------------
+
+.. automodule:: pipeline.row_types.computed_values.InertialForce
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.row\_types.computed\_values.RevolutionsPerMinute module
+----------------------------------------------------------------
+
+.. automodule:: pipeline.row_types.computed_values.RevolutionsPerMinute
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.row\_types.computed\_values.Speed module
+-------------------------------------------------
+
+.. automodule:: pipeline.row_types.computed_values.Speed
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.row\_types.computed\_values.TractionForce module
+---------------------------------------------------------
+
+.. automodule:: pipeline.row_types.computed_values.TractionForce
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.row\_types.computed\_values.TractionPower module
+---------------------------------------------------------
+
+.. automodule:: pipeline.row_types.computed_values.TractionPower
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pipeline.row_types.computed_values
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,20 @@
+pipeline.row\_types package
+===========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   pipeline.row_types.aggregation_techniques
+   pipeline.row_types.computed_values
+   pipeline.row_types.segment_properties
+
+Module contents
+---------------
+
+.. automodule:: pipeline.row_types
+   :members:
+   :undoc-members:
+   :show-inheritance:

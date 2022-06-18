@@ -1,0 +1,19 @@
+pipeline.row\_types.segment\_properties package
+===============================================
+
+Submodules
+----------
+
+pipeline.row\_types.segment\_properties.Theta module
+----------------------------------------------------
+
+.. automodule:: pipeline.row_types.segment_properties.Theta
+   :members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pipeline.row_types.segment_properties
+   :members:
+   :show-inheritance:

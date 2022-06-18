@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pipeline.row_types.computed_values package &mdash; LiRA Visualization Processing Pipeline  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> LiRA Visualization Processing Pipeline
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">pipeline.row_types.computed_values package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pipeline.row_types.computed_values.Acceleration">pipeline.row_types.computed_values.Acceleration module</a></li>
+<li><a class="reference internal" href="#module-pipeline.row_types.computed_values.HillClimbingForce">pipeline.row_types.computed_values.HillClimbingForce module</a></li>
+<li><a class="reference internal" href="#module-pipeline.row_types.computed_values.InertialForce">pipeline.row_types.computed_values.InertialForce module</a></li>
+<li><a class="reference internal" href="#module-pipeline.row_types.computed_values.RevolutionsPerMinute">pipeline.row_types.computed_values.RevolutionsPerMinute module</a></li>
+<li><a class="reference internal" href="#module-pipeline.row_types.computed_values.Speed">pipeline.row_types.computed_values.Speed module</a></li>
+<li><a class="reference internal" href="#module-pipeline.row_types.computed_values.TractionForce">pipeline.row_types.computed_values.TractionForce module</a></li>
+<li><a class="reference internal" href="#module-pipeline.row_types.computed_values.TractionPower">pipeline.row_types.computed_values.TractionPower module</a></li>
+<li><a class="reference internal" href="#module-pipeline.row_types.computed_values">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LiRA Visualization Processing Pipeline</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>pipeline.row_types.computed_values package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/source/pipeline.row_types.computed_values.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pipeline-row-types-computed-values-package">
+<h1>pipeline.row_types.computed_values package<a class="headerlink" href="#pipeline-row-types-computed-values-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-pipeline.row_types.computed_values.Acceleration">
+<span id="pipeline-row-types-computed-values-acceleration-module"></span><h2>pipeline.row_types.computed_values.Acceleration module<a class="headerlink" href="#module-pipeline.row_types.computed_values.Acceleration" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.Acceleration.Acceleration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.row_types.computed_values.Acceleration.</span></span><span class="sig-name descname"><span class="pre">Acceleration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.computed_values_types.ComputedValueType" title="pipeline.tables.computed_values_types.ComputedValueType"><span class="pre">ComputedValueType</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.Acceleration.Acceleration" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ComputedValue</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.Acceleration.Acceleration.AGGREGATIONS">
+<span class="sig-name descname"><span class="pre">AGGREGATIONS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.Acceleration.Acceleration.AGGREGATIONS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.Acceleration.Acceleration.DESCRIPTION">
+<span class="sig-name descname"><span class="pre">DESCRIPTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'X</span> <span class="pre">component</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">acceleration</span> <span class="pre">measurements'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.Acceleration.Acceleration.DESCRIPTION" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.Acceleration.Acceleration.TYPE">
+<span class="sig-name descname"><span class="pre">TYPE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Acceleration'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.Acceleration.Acceleration.TYPE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.Acceleration.Acceleration.UNITS">
+<span class="sig-name descname"><span class="pre">UNITS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'m/s²'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.Acceleration.Acceleration.UNITS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.Acceleration.Acceleration.calculate_value">
+<span class="sig-name descname"><span class="pre">calculate_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.Acceleration.Acceleration.calculate_value" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.Acceleration.Acceleration.prerequisites">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prerequisites</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.Acceleration.Acceleration.prerequisites" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pipeline.row_types.computed_values.HillClimbingForce">
+<span id="pipeline-row-types-computed-values-hillclimbingforce-module"></span><h2>pipeline.row_types.computed_values.HillClimbingForce module<a class="headerlink" href="#module-pipeline.row_types.computed_values.HillClimbingForce" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.HillClimbingForce.HillClimbingForce">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.row_types.computed_values.HillClimbingForce.</span></span><span class="sig-name descname"><span class="pre">HillClimbingForce</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.computed_values_types.ComputedValueType" title="pipeline.tables.computed_values_types.ComputedValueType"><span class="pre">ComputedValueType</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.HillClimbingForce.HillClimbingForce" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ComputedValue</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.HillClimbingForce.HillClimbingForce.AGGREGATIONS">
+<span class="sig-name descname"><span class="pre">AGGREGATIONS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.HillClimbingForce.HillClimbingForce.AGGREGATIONS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.HillClimbingForce.HillClimbingForce.DESCRIPTION">
+<span class="sig-name descname"><span class="pre">DESCRIPTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Hill</span> <span class="pre">Climbing</span> <span class="pre">Force</span> <span class="pre">component</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">Traction</span> <span class="pre">Force</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">energy</span> <span class="pre">measurement'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.HillClimbingForce.HillClimbingForce.DESCRIPTION" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.HillClimbingForce.HillClimbingForce.TYPE">
+<span class="sig-name descname"><span class="pre">TYPE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Hill</span> <span class="pre">Climbing</span> <span class="pre">Force'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.HillClimbingForce.HillClimbingForce.TYPE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.HillClimbingForce.HillClimbingForce.UNITS">
+<span class="sig-name descname"><span class="pre">UNITS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Newtons'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.HillClimbingForce.HillClimbingForce.UNITS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.HillClimbingForce.HillClimbingForce.calculate_value">
+<span class="sig-name descname"><span class="pre">calculate_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.HillClimbingForce.HillClimbingForce.calculate_value" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.HillClimbingForce.HillClimbingForce.prerequisites">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prerequisites</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.HillClimbingForce.HillClimbingForce.prerequisites" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pipeline.row_types.computed_values.InertialForce">
+<span id="pipeline-row-types-computed-values-inertialforce-module"></span><h2>pipeline.row_types.computed_values.InertialForce module<a class="headerlink" href="#module-pipeline.row_types.computed_values.InertialForce" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.InertialForce.InertialForce">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.row_types.computed_values.InertialForce.</span></span><span class="sig-name descname"><span class="pre">InertialForce</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.computed_values_types.ComputedValueType" title="pipeline.tables.computed_values_types.ComputedValueType"><span class="pre">ComputedValueType</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.InertialForce.InertialForce" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ComputedValue</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.InertialForce.InertialForce.AGGREGATIONS">
+<span class="sig-name descname"><span class="pre">AGGREGATIONS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.InertialForce.InertialForce.AGGREGATIONS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.InertialForce.InertialForce.DESCRIPTION">
+<span class="sig-name descname"><span class="pre">DESCRIPTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Inertial</span> <span class="pre">Force</span> <span class="pre">component</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">Traction</span> <span class="pre">Force</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">energy</span> <span class="pre">measurement'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.InertialForce.InertialForce.DESCRIPTION" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.InertialForce.InertialForce.TYPE">
+<span class="sig-name descname"><span class="pre">TYPE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Inertial</span> <span class="pre">Force'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.InertialForce.InertialForce.TYPE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.InertialForce.InertialForce.UNITS">
+<span class="sig-name descname"><span class="pre">UNITS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Newtons'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.InertialForce.InertialForce.UNITS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.InertialForce.InertialForce.calculate_value">
+<span class="sig-name descname"><span class="pre">calculate_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.InertialForce.InertialForce.calculate_value" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.InertialForce.InertialForce.prerequisites">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prerequisites</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.InertialForce.InertialForce.prerequisites" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pipeline.row_types.computed_values.RevolutionsPerMinute">
+<span id="pipeline-row-types-computed-values-revolutionsperminute-module"></span><h2>pipeline.row_types.computed_values.RevolutionsPerMinute module<a class="headerlink" href="#module-pipeline.row_types.computed_values.RevolutionsPerMinute" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.RevolutionsPerMinute.RevolutionsPerMinute">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.row_types.computed_values.RevolutionsPerMinute.</span></span><span class="sig-name descname"><span class="pre">RevolutionsPerMinute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.computed_values_types.ComputedValueType" title="pipeline.tables.computed_values_types.ComputedValueType"><span class="pre">ComputedValueType</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.RevolutionsPerMinute.RevolutionsPerMinute" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ComputedValue</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.RevolutionsPerMinute.RevolutionsPerMinute.AGGREGATIONS">
+<span class="sig-name descname"><span class="pre">AGGREGATIONS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.RevolutionsPerMinute.RevolutionsPerMinute.AGGREGATIONS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.RevolutionsPerMinute.RevolutionsPerMinute.DESCRIPTION">
+<span class="sig-name descname"><span class="pre">DESCRIPTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'How</span> <span class="pre">many</span> <span class="pre">times</span> <span class="pre">the</span> <span class="pre">crankshaft</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">engine</span> <span class="pre">makes</span> <span class="pre">one</span> <span class="pre">full</span> <span class="pre">rotation</span> <span class="pre">in</span> <span class="pre">a</span> <span class="pre">minute'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.RevolutionsPerMinute.RevolutionsPerMinute.DESCRIPTION" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.RevolutionsPerMinute.RevolutionsPerMinute.TYPE">
+<span class="sig-name descname"><span class="pre">TYPE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Revolutions</span> <span class="pre">per</span> <span class="pre">minute'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.RevolutionsPerMinute.RevolutionsPerMinute.TYPE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.RevolutionsPerMinute.RevolutionsPerMinute.UNITS">
+<span class="sig-name descname"><span class="pre">UNITS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'rpm'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.RevolutionsPerMinute.RevolutionsPerMinute.UNITS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.RevolutionsPerMinute.RevolutionsPerMinute.calculate_value">
+<span class="sig-name descname"><span class="pre">calculate_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.RevolutionsPerMinute.RevolutionsPerMinute.calculate_value" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.RevolutionsPerMinute.RevolutionsPerMinute.prerequisites">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prerequisites</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.RevolutionsPerMinute.RevolutionsPerMinute.prerequisites" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pipeline.row_types.computed_values.Speed">
+<span id="pipeline-row-types-computed-values-speed-module"></span><h2>pipeline.row_types.computed_values.Speed module<a class="headerlink" href="#module-pipeline.row_types.computed_values.Speed" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.Speed.Speed">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.row_types.computed_values.Speed.</span></span><span class="sig-name descname"><span class="pre">Speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.computed_values_types.ComputedValueType" title="pipeline.tables.computed_values_types.ComputedValueType"><span class="pre">ComputedValueType</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.Speed.Speed" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ComputedValue</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.Speed.Speed.AGGREGATIONS">
+<span class="sig-name descname"><span class="pre">AGGREGATIONS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.Speed.Speed.AGGREGATIONS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.Speed.Speed.DESCRIPTION">
+<span class="sig-name descname"><span class="pre">DESCRIPTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Speed</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">vehicle'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.Speed.Speed.DESCRIPTION" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.Speed.Speed.TYPE">
+<span class="sig-name descname"><span class="pre">TYPE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Speed'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.Speed.Speed.TYPE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.Speed.Speed.UNITS">
+<span class="sig-name descname"><span class="pre">UNITS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'km/h'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.Speed.Speed.UNITS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.Speed.Speed.calculate_value">
+<span class="sig-name descname"><span class="pre">calculate_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.Speed.Speed.calculate_value" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.Speed.Speed.prerequisites">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prerequisites</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.Speed.Speed.prerequisites" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pipeline.row_types.computed_values.TractionForce">
+<span id="pipeline-row-types-computed-values-tractionforce-module"></span><h2>pipeline.row_types.computed_values.TractionForce module<a class="headerlink" href="#module-pipeline.row_types.computed_values.TractionForce" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.TractionForce.TractionForce">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.row_types.computed_values.TractionForce.</span></span><span class="sig-name descname"><span class="pre">TractionForce</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.computed_values_types.ComputedValueType" title="pipeline.tables.computed_values_types.ComputedValueType"><span class="pre">ComputedValueType</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.TractionForce.TractionForce" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ComputedValue</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.TractionForce.TractionForce.AGGREGATIONS">
+<span class="sig-name descname"><span class="pre">AGGREGATIONS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.TractionForce.TractionForce.AGGREGATIONS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.TractionForce.TractionForce.DESCRIPTION">
+<span class="sig-name descname"><span class="pre">DESCRIPTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Traction</span> <span class="pre">Force</span> <span class="pre">calculated</span> <span class="pre">from</span> <span class="pre">Traction</span> <span class="pre">power'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.TractionForce.TractionForce.DESCRIPTION" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.TractionForce.TractionForce.TYPE">
+<span class="sig-name descname"><span class="pre">TYPE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Traction</span> <span class="pre">Force'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.TractionForce.TractionForce.TYPE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.TractionForce.TractionForce.UNITS">
+<span class="sig-name descname"><span class="pre">UNITS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Newtons'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.TractionForce.TractionForce.UNITS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.TractionForce.TractionForce.calculate_value">
+<span class="sig-name descname"><span class="pre">calculate_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.TractionForce.TractionForce.calculate_value" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.TractionForce.TractionForce.prerequisites">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prerequisites</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.TractionForce.TractionForce.prerequisites" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pipeline.row_types.computed_values.TractionPower">
+<span id="pipeline-row-types-computed-values-tractionpower-module"></span><h2>pipeline.row_types.computed_values.TractionPower module<a class="headerlink" href="#module-pipeline.row_types.computed_values.TractionPower" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.TractionPower.TractionPower">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.row_types.computed_values.TractionPower.</span></span><span class="sig-name descname"><span class="pre">TractionPower</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.computed_values_types.ComputedValueType" title="pipeline.tables.computed_values_types.ComputedValueType"><span class="pre">ComputedValueType</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.TractionPower.TractionPower" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ComputedValue</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.TractionPower.TractionPower.AGGREGATIONS">
+<span class="sig-name descname"><span class="pre">AGGREGATIONS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.TractionPower.TractionPower.AGGREGATIONS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.TractionPower.TractionPower.DESCRIPTION">
+<span class="sig-name descname"><span class="pre">DESCRIPTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Traction</span> <span class="pre">power</span> <span class="pre">taken</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">vehicle'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.TractionPower.TractionPower.DESCRIPTION" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.TractionPower.TractionPower.TYPE">
+<span class="sig-name descname"><span class="pre">TYPE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Traction</span> <span class="pre">power'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.TractionPower.TractionPower.TYPE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.TractionPower.TractionPower.UNITS">
+<span class="sig-name descname"><span class="pre">UNITS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'W'</span></em><a class="headerlink" href="#pipeline.row_types.computed_values.TractionPower.TractionPower.UNITS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.TractionPower.TractionPower.calculate_value">
+<span class="sig-name descname"><span class="pre">calculate_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.TractionPower.TractionPower.calculate_value" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.row_types.computed_values.TractionPower.TractionPower.prerequisites">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prerequisites</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.tables.html#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.row_types.computed_values.TractionPower.TractionPower.prerequisites" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pipeline.row_types.computed_values">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pipeline.row_types.computed_values" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Sergi Doce.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

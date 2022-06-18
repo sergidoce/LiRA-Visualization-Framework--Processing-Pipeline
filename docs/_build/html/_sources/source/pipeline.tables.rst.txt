@@ -1,0 +1,69 @@
+pipeline.tables package
+=======================
+
+Submodules
+----------
+
+pipeline.tables.aggregated\_values module
+-----------------------------------------
+
+.. automodule:: pipeline.tables.aggregated_values
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.tables.aggregation\_methods module
+-------------------------------------------
+
+.. automodule:: pipeline.tables.aggregation_methods
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.tables.computed\_values module
+---------------------------------------
+
+.. automodule:: pipeline.tables.computed_values
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.tables.computed\_values\_types module
+----------------------------------------------
+
+.. automodule:: pipeline.tables.computed_values_types
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.tables.measurements module
+-----------------------------------
+
+.. automodule:: pipeline.tables.measurements
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.tables.segments module
+-------------------------------
+
+.. automodule:: pipeline.tables.segments
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.tables.segments\_properties module
+-------------------------------------------
+
+.. automodule:: pipeline.tables.segments_properties
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pipeline.tables
+   :members:
+   :undoc-members:
+   :show-inheritance:

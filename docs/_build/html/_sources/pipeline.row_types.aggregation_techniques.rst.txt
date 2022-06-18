@@ -1,0 +1,26 @@
+pipeline.row\_types.aggregation\_techniques package
+===================================================
+
+Submodules
+----------
+
+pipeline.row\_types.aggregation\_techniques.Average module
+----------------------------------------------------------
+
+.. automodule:: pipeline.row_types.aggregation_techniques.Average
+   :members:
+   :show-inheritance:
+
+pipeline.row\_types.aggregation\_techniques.Minimum module
+----------------------------------------------------------
+
+.. automodule:: pipeline.row_types.aggregation_techniques.Minimum
+   :members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pipeline.row_types.aggregation_techniques
+   :members:
+   :show-inheritance:

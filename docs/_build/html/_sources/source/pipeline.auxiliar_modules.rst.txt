@@ -1,0 +1,37 @@
+pipeline.auxiliar\_modules package
+==================================
+
+Submodules
+----------
+
+pipeline.auxiliar\_modules.auxiliar\_classes module
+---------------------------------------------------
+
+.. automodule:: pipeline.auxiliar_modules.auxiliar_classes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.auxiliar\_modules.db\_queries module
+---------------------------------------------
+
+.. automodule:: pipeline.auxiliar_modules.db_queries
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pipeline.auxiliar\_modules.map\_matching module
+-----------------------------------------------
+
+.. automodule:: pipeline.auxiliar_modules.map_matching
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pipeline.auxiliar_modules
+   :members:
+   :undoc-members:
+   :show-inheritance:

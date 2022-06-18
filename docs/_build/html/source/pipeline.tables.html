@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pipeline.tables package &mdash; LiRA Visualization Processing Pipeline  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> LiRA Visualization Processing Pipeline
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">pipeline.tables package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pipeline.tables.aggregated_values">pipeline.tables.aggregated_values module</a></li>
+<li><a class="reference internal" href="#module-pipeline.tables.aggregation_methods">pipeline.tables.aggregation_methods module</a></li>
+<li><a class="reference internal" href="#module-pipeline.tables.computed_values">pipeline.tables.computed_values module</a></li>
+<li><a class="reference internal" href="#module-pipeline.tables.computed_values_types">pipeline.tables.computed_values_types module</a></li>
+<li><a class="reference internal" href="#module-pipeline.tables.measurements">pipeline.tables.measurements module</a></li>
+<li><a class="reference internal" href="#module-pipeline.tables.segments">pipeline.tables.segments module</a></li>
+<li><a class="reference internal" href="#module-pipeline.tables.segments_properties">pipeline.tables.segments_properties module</a></li>
+<li><a class="reference internal" href="#module-pipeline.tables">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LiRA Visualization Processing Pipeline</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>pipeline.tables package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/source/pipeline.tables.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pipeline-tables-package">
+<h1>pipeline.tables package<a class="headerlink" href="#pipeline-tables-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-pipeline.tables.aggregated_values">
+<span id="pipeline-tables-aggregated-values-module"></span><h2>pipeline.tables.aggregated_values module<a class="headerlink" href="#module-pipeline.tables.aggregated_values" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.tables.aggregated_values.AggregatedValue">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.tables.aggregated_values.</span></span><span class="sig-name descname"><span class="pre">AggregatedValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">count</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aggregation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.aggregated_values.AggregatedValue" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregated_values.AggregatedValue.get_db_row">
+<span class="sig-name descname"><span class="pre">get_db_row</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.aggregated_values.AggregatedValue.get_db_row" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.tables.aggregated_values.AggregatedValues">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.tables.aggregated_values.</span></span><span class="sig-name descname"><span class="pre">AggregatedValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.aggregated_values.AggregatedValues" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.aggregated_values.AggregatedValues.aggregated_values_to_insert">
+<span class="sig-name descname"><span class="pre">aggregated_values_to_insert</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.aggregated_values.AggregatedValue" title="pipeline.tables.aggregated_values.AggregatedValue"><span class="pre">AggregatedValue</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.tables.aggregated_values.AggregatedValues.aggregated_values_to_insert" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.aggregated_values.AggregatedValues.aggregated_values_to_update">
+<span class="sig-name descname"><span class="pre">aggregated_values_to_update</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.aggregated_values.AggregatedValue" title="pipeline.tables.aggregated_values.AggregatedValue"><span class="pre">AggregatedValue</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.tables.aggregated_values.AggregatedValues.aggregated_values_to_update" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregated_values.AggregatedValues.compute_data">
+<span class="sig-name descname"><span class="pre">compute_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">computed_ways</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">not_computed_ways</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.aggregated_values.AggregatedValues.compute_data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregated_values.AggregatedValues.drop">
+<span class="sig-name descname"><span class="pre">drop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.aggregated_values.AggregatedValues.drop" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregated_values.AggregatedValues.generate_aggregated_values">
+<span class="sig-name descname"><span class="pre">generate_aggregated_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ways</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.aggregated_values.AggregatedValue" title="pipeline.tables.aggregated_values.AggregatedValue"><span class="pre">AggregatedValue</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.aggregated_values.AggregatedValues.generate_aggregated_values" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregated_values.AggregatedValues.get_aggregation_type_classes">
+<span class="sig-name descname"><span class="pre">get_aggregation_type_classes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.aggregated_values.AggregatedValues.get_aggregation_type_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregated_values.AggregatedValues.get_data_type_classes">
+<span class="sig-name descname"><span class="pre">get_data_type_classes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.aggregated_values.AggregatedValues.get_data_type_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregated_values.AggregatedValues.get_values_of_type_and_direction">
+<span class="sig-name descname"><span class="pre">get_values_of_type_and_direction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">computed_values</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.computed_values.ComputedValue" title="pipeline.tables.computed_values.ComputedValue"><span class="pre">ComputedValue</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.aggregated_values.AggregatedValues.get_values_of_type_and_direction" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregated_values.AggregatedValues.insert_into_db">
+<span class="sig-name descname"><span class="pre">insert_into_db</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.aggregated_values.AggregatedValues.insert_into_db" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregated_values.AggregatedValues.update_values_in_db">
+<span class="sig-name descname"><span class="pre">update_values_in_db</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.aggregated_values.AggregatedValues.update_values_in_db" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pipeline.tables.aggregation_methods">
+<span id="pipeline-tables-aggregation-methods-module"></span><h2>pipeline.tables.aggregation_methods module<a class="headerlink" href="#module-pipeline.tables.aggregation_methods" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.tables.aggregation_methods.AggregationMethod">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.tables.aggregation_methods.</span></span><span class="sig-name descname"><span class="pre">AggregationMethod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.aggregation_methods.AggregationMethod" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregation_methods.AggregationMethod.calculate_value">
+<span class="sig-name descname"><span class="pre">calculate_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.aggregation_methods.AggregationMethod.calculate_value" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregation_methods.AggregationMethod.get_db_row">
+<span class="sig-name descname"><span class="pre">get_db_row</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.aggregation_methods.AggregationMethod.get_db_row" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.tables.aggregation_methods.AggregationMethods">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.tables.aggregation_methods.</span></span><span class="sig-name descname"><span class="pre">AggregationMethods</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.aggregation_methods.AggregationMethods" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregation_methods.AggregationMethods.compute_data">
+<span class="sig-name descname"><span class="pre">compute_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.aggregation_methods.AggregationMethods.compute_data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.aggregation_methods.AggregationMethods.computed_aggregation_methods">
+<span class="sig-name descname"><span class="pre">computed_aggregation_methods</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.aggregation_methods.AggregationMethod" title="pipeline.tables.aggregation_methods.AggregationMethod"><span class="pre">AggregationMethod</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.tables.aggregation_methods.AggregationMethods.computed_aggregation_methods" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregation_methods.AggregationMethods.drop">
+<span class="sig-name descname"><span class="pre">drop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.aggregation_methods.AggregationMethods.drop" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregation_methods.AggregationMethods.generate_aggregation_methods">
+<span class="sig-name descname"><span class="pre">generate_aggregation_methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.aggregation_methods.AggregationMethod" title="pipeline.tables.aggregation_methods.AggregationMethod"><span class="pre">AggregationMethod</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.aggregation_methods.AggregationMethods.generate_aggregation_methods" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregation_methods.AggregationMethods.generate_ids">
+<span class="sig-name descname"><span class="pre">generate_ids</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_modules</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.aggregation_methods.AggregationMethods.generate_ids" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregation_methods.AggregationMethods.get_aggregation_methods">
+<span class="sig-name descname"><span class="pre">get_aggregation_methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.aggregation_methods.AggregationMethod" title="pipeline.tables.aggregation_methods.AggregationMethod"><span class="pre">AggregationMethod</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.aggregation_methods.AggregationMethods.get_aggregation_methods" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregation_methods.AggregationMethods.get_aggregation_methods_classes">
+<span class="sig-name descname"><span class="pre">get_aggregation_methods_classes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.aggregation_methods.AggregationMethods.get_aggregation_methods_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregation_methods.AggregationMethods.get_id_of_name">
+<span class="sig-name descname"><span class="pre">get_id_of_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#pipeline.tables.aggregation_methods.AggregationMethods.get_id_of_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregation_methods.AggregationMethods.get_inserted">
+<span class="sig-name descname"><span class="pre">get_inserted</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.aggregation_methods.AggregationMethods.get_inserted" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregation_methods.AggregationMethods.get_method_by_name">
+<span class="sig-name descname"><span class="pre">get_method_by_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pipeline.tables.aggregation_methods.AggregationMethod" title="pipeline.tables.aggregation_methods.AggregationMethod"><span class="pre">AggregationMethod</span></a></span></span><a class="headerlink" href="#pipeline.tables.aggregation_methods.AggregationMethods.get_method_by_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.aggregation_methods.AggregationMethods.insert_into_db">
+<span class="sig-name descname"><span class="pre">insert_into_db</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.aggregation_methods.AggregationMethods.insert_into_db" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pipeline.tables.computed_values">
+<span id="pipeline-tables-computed-values-module"></span><h2>pipeline.tables.computed_values module<a class="headerlink" href="#module-pipeline.tables.computed_values" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values.ComputedValue">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.tables.computed_values.</span></span><span class="sig-name descname"><span class="pre">ComputedValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.computed_values.ComputedValue" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values.ComputedValue.calculate_value">
+<span class="sig-name descname"><span class="pre">calculate_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.computed_values.ComputedValue.calculate_value" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values.ComputedValue.get_db_row">
+<span class="sig-name descname"><span class="pre">get_db_row</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.computed_values.ComputedValue.get_db_row" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values.ComputedValue.prerequisites">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prerequisites</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.computed_values.ComputedValue.prerequisites" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values.ComputedValues">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.tables.computed_values.</span></span><span class="sig-name descname"><span class="pre">ComputedValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.computed_values.ComputedValues" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values.ComputedValues.compute_data">
+<span class="sig-name descname"><span class="pre">compute_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurements</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">computed_ways</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.computed_values.ComputedValues.compute_data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values.ComputedValues.compute_dictionaries">
+<span class="sig-name descname"><span class="pre">compute_dictionaries</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.computed_values.ComputedValues.compute_dictionaries" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values.ComputedValues.computed_values">
+<span class="sig-name descname"><span class="pre">computed_values</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.computed_values.ComputedValue" title="pipeline.tables.computed_values.ComputedValue"><span class="pre">ComputedValue</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.tables.computed_values.ComputedValues.computed_values" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values.ComputedValues.computed_values_in_db">
+<span class="sig-name descname"><span class="pre">computed_values_in_db</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.computed_values.ComputedValue" title="pipeline.tables.computed_values.ComputedValue"><span class="pre">ComputedValue</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.tables.computed_values.ComputedValues.computed_values_in_db" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values.ComputedValues.computed_values_per_segment">
+<span class="sig-name descname"><span class="pre">computed_values_per_segment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#pipeline.tables.computed_values.ComputedValues.computed_values_per_segment" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values.ComputedValues.computed_values_to_insert">
+<span class="sig-name descname"><span class="pre">computed_values_to_insert</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.computed_values.ComputedValue" title="pipeline.tables.computed_values.ComputedValue"><span class="pre">ComputedValue</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.tables.computed_values.ComputedValues.computed_values_to_insert" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values.ComputedValues.drop">
+<span class="sig-name descname"><span class="pre">drop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.computed_values.ComputedValues.drop" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values.ComputedValues.generate_computed_values">
+<span class="sig-name descname"><span class="pre">generate_computed_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.computed_values.ComputedValue" title="pipeline.tables.computed_values.ComputedValue"><span class="pre">ComputedValue</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.computed_values.ComputedValues.generate_computed_values" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values.ComputedValues.get_computed_values_in_segment">
+<span class="sig-name descname"><span class="pre">get_computed_values_in_segment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">segment_id</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.computed_values.ComputedValue" title="pipeline.tables.computed_values.ComputedValue"><span class="pre">ComputedValue</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.computed_values.ComputedValues.get_computed_values_in_segment" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values.ComputedValues.get_computed_values_types_classes">
+<span class="sig-name descname"><span class="pre">get_computed_values_types_classes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.computed_values.ComputedValues.get_computed_values_types_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values.ComputedValues.insert_into_db">
+<span class="sig-name descname"><span class="pre">insert_into_db</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.computed_values.ComputedValues.insert_into_db" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values.parse_computed_values">
+<span class="sig-prename descclassname"><span class="pre">pipeline.tables.computed_values.</span></span><span class="sig-name descname"><span class="pre">parse_computed_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">computed_values_rows</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.computed_values.ComputedValue" title="pipeline.tables.computed_values.ComputedValue"><span class="pre">ComputedValue</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.computed_values.parse_computed_values" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-pipeline.tables.computed_values_types">
+<span id="pipeline-tables-computed-values-types-module"></span><h2>pipeline.tables.computed_values_types module<a class="headerlink" href="#module-pipeline.tables.computed_values_types" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values_types.ComputedValueType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.tables.computed_values_types.</span></span><span class="sig-name descname"><span class="pre">ComputedValueType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">units</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.computed_values_types.ComputedValueType" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values_types.ComputedValueType.get_db_row">
+<span class="sig-name descname"><span class="pre">get_db_row</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.computed_values_types.ComputedValueType.get_db_row" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values_types.ComputedValuesTypes">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.tables.computed_values_types.</span></span><span class="sig-name descname"><span class="pre">ComputedValuesTypes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.computed_values_types.ComputedValuesTypes" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values_types.ComputedValuesTypes.compute_data">
+<span class="sig-name descname"><span class="pre">compute_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.computed_values_types.ComputedValuesTypes.compute_data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values_types.ComputedValuesTypes.computed_values_types">
+<span class="sig-name descname"><span class="pre">computed_values_types</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.computed_values_types.ComputedValueType" title="pipeline.tables.computed_values_types.ComputedValueType"><span class="pre">ComputedValueType</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.tables.computed_values_types.ComputedValuesTypes.computed_values_types" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values_types.ComputedValuesTypes.drop">
+<span class="sig-name descname"><span class="pre">drop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.computed_values_types.ComputedValuesTypes.drop" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values_types.ComputedValuesTypes.generate_computed_values_types">
+<span class="sig-name descname"><span class="pre">generate_computed_values_types</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.computed_values_types.ComputedValueType" title="pipeline.tables.computed_values_types.ComputedValueType"><span class="pre">ComputedValueType</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.computed_values_types.ComputedValuesTypes.generate_computed_values_types" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values_types.ComputedValuesTypes.generate_ids">
+<span class="sig-name descname"><span class="pre">generate_ids</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_modules</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.computed_values_types.ComputedValuesTypes.generate_ids" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values_types.ComputedValuesTypes.get_computed_values_types_classes">
+<span class="sig-name descname"><span class="pre">get_computed_values_types_classes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.computed_values_types.ComputedValuesTypes.get_computed_values_types_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values_types.ComputedValuesTypes.get_id_of_name">
+<span class="sig-name descname"><span class="pre">get_id_of_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#pipeline.tables.computed_values_types.ComputedValuesTypes.get_id_of_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values_types.ComputedValuesTypes.get_inserted">
+<span class="sig-name descname"><span class="pre">get_inserted</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.computed_values_types.ComputedValuesTypes.get_inserted" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values_types.ComputedValuesTypes.get_name_by_id">
+<span class="sig-name descname"><span class="pre">get_name_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pipeline.tables.computed_values_types.ComputedValuesTypes.get_name_by_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values_types.ComputedValuesTypes.get_type_by_id">
+<span class="sig-name descname"><span class="pre">get_type_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pipeline.tables.computed_values_types.ComputedValueType" title="pipeline.tables.computed_values_types.ComputedValueType"><span class="pre">ComputedValueType</span></a></span></span><a class="headerlink" href="#pipeline.tables.computed_values_types.ComputedValuesTypes.get_type_by_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values_types.ComputedValuesTypes.get_type_by_name">
+<span class="sig-name descname"><span class="pre">get_type_by_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pipeline.tables.computed_values_types.ComputedValueType" title="pipeline.tables.computed_values_types.ComputedValueType"><span class="pre">ComputedValueType</span></a></span></span><a class="headerlink" href="#pipeline.tables.computed_values_types.ComputedValuesTypes.get_type_by_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.computed_values_types.ComputedValuesTypes.insert_into_db">
+<span class="sig-name descname"><span class="pre">insert_into_db</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.computed_values_types.ComputedValuesTypes.insert_into_db" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pipeline.tables.measurements">
+<span id="pipeline-tables-measurements-module"></span><h2>pipeline.tables.measurements module<a class="headerlink" href="#module-pipeline.tables.measurements" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurement">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.tables.measurements.</span></span><span class="sig-name descname"><span class="pre">Measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trip</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created_at</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">updated_at</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.measurements.Measurement" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurement.get_db_row">
+<span class="sig-name descname"><span class="pre">get_db_row</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.measurements.Measurement.get_db_row" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.tables.measurements.</span></span><span class="sig-name descname"><span class="pre">Measurements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.measurements.Measurements" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.calculate_distance">
+<span class="sig-name descname"><span class="pre">calculate_distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point_b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.measurements.Measurements.calculate_distance" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.compute_data">
+<span class="sig-name descname"><span class="pre">compute_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.measurements.Measurements.compute_data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.compute_directions">
+<span class="sig-name descname"><span class="pre">compute_directions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.measurements.Measurements.compute_directions" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.compute_measurement">
+<span class="sig-name descname"><span class="pre">compute_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">segments</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.segments.Segment" title="pipeline.tables.segments.Segment"><span class="pre">Segment</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#pipeline.tables.measurements.Measurements.compute_measurement" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.compute_measurements">
+<span class="sig-name descname"><span class="pre">compute_measurements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.measurements.Measurements.compute_measurements" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.compute_measurements_for_a_trip">
+<span class="sig-name descname"><span class="pre">compute_measurements_for_a_trip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.measurements.Measurements.compute_measurements_for_a_trip" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.drop">
+<span class="sig-name descname"><span class="pre">drop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.measurements.Measurements.drop" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.generate_dictionaries">
+<span class="sig-name descname"><span class="pre">generate_dictionaries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">computed_measurements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.measurements.Measurements.generate_dictionaries" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.get_closest_measurement_of_type_in_segment">
+<span class="sig-name descname"><span class="pre">get_closest_measurement_of_type_in_segment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created_at</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.measurements.Measurements.get_closest_measurement_of_type_in_segment" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.get_measurement_by_id">
+<span class="sig-name descname"><span class="pre">get_measurement_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></span><a class="headerlink" href="#pipeline.tables.measurements.Measurements.get_measurement_by_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.get_measurements">
+<span class="sig-name descname"><span class="pre">get_measurements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.measurements.Measurements.get_measurements" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.get_next_measurement_of_type_in_segment">
+<span class="sig-name descname"><span class="pre">get_next_measurement_of_type_in_segment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created_at</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></span><a class="headerlink" href="#pipeline.tables.measurements.Measurements.get_next_measurement_of_type_in_segment" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.get_previous_measurement_of_type_in_segment">
+<span class="sig-name descname"><span class="pre">get_previous_measurement_of_type_in_segment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created_at</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a></span></span><a class="headerlink" href="#pipeline.tables.measurements.Measurements.get_previous_measurement_of_type_in_segment" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.insert_into_db">
+<span class="sig-name descname"><span class="pre">insert_into_db</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.measurements.Measurements.insert_into_db" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.is_point_c_between_a_and_b">
+<span class="sig-name descname"><span class="pre">is_point_c_between_a_and_b</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point_b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point_c</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.measurements.Measurements.is_point_c_between_a_and_b" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.measurements">
+<span class="sig-name descname"><span class="pre">measurements</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.tables.measurements.Measurements.measurements" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.measurements_per_id">
+<span class="sig-name descname"><span class="pre">measurements_per_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#pipeline.tables.measurements.Measurements.measurements_per_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.measurements_per_segment">
+<span class="sig-name descname"><span class="pre">measurements_per_segment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#pipeline.tables.measurements.Measurements.measurements_per_segment" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.measurements_per_type">
+<span class="sig-name descname"><span class="pre">measurements_per_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#pipeline.tables.measurements.Measurements.measurements_per_type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.Measurements.segment_of_measurement">
+<span class="sig-name descname"><span class="pre">segment_of_measurement</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#pipeline.tables.measurements.Measurements.segment_of_measurement" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.filter_measurements">
+<span class="sig-prename descclassname"><span class="pre">pipeline.tables.measurements.</span></span><span class="sig-name descname"><span class="pre">filter_measurements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.measurements.filter_measurements" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.format_2d_measurement">
+<span class="sig-prename descclassname"><span class="pre">pipeline.tables.measurements.</span></span><span class="sig-name descname"><span class="pre">format_2d_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.measurements.format_2d_measurement" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.format_3d_measurement">
+<span class="sig-prename descclassname"><span class="pre">pipeline.tables.measurements.</span></span><span class="sig-name descname"><span class="pre">format_3d_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.measurements.format_3d_measurement" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.format_for_map_matching">
+<span class="sig-prename descclassname"><span class="pre">pipeline.tables.measurements.</span></span><span class="sig-name descname"><span class="pre">format_for_map_matching</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span></span></span><a class="headerlink" href="#pipeline.tables.measurements.format_for_map_matching" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.format_measurements">
+<span class="sig-prename descclassname"><span class="pre">pipeline.tables.measurements.</span></span><span class="sig-name descname"><span class="pre">format_measurements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.measurements.format_measurements" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pipeline.tables.measurements.parse_measurements">
+<span class="sig-prename descclassname"><span class="pre">pipeline.tables.measurements.</span></span><span class="sig-name descname"><span class="pre">parse_measurements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurements_rows</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.measurements.Measurement" title="pipeline.tables.measurements.Measurement"><span class="pre">Measurement</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.measurements.parse_measurements" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-pipeline.tables.segments">
+<span id="pipeline-tables-segments-module"></span><h2>pipeline.tables.segments module<a class="headerlink" href="#module-pipeline.tables.segments" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.tables.segments.Segment">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.tables.segments.</span></span><span class="sig-name descname"><span class="pre">Segment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position_b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">way_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.segments.Segment" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments.Segment.get_db_row">
+<span class="sig-name descname"><span class="pre">get_db_row</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span></span></span><a class="headerlink" href="#pipeline.tables.segments.Segment.get_db_row" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.tables.segments.Segments">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.tables.segments.</span></span><span class="sig-name descname"><span class="pre">Segments</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.segments.Segments" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments.Segments.calculate_distance">
+<span class="sig-name descname"><span class="pre">calculate_distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point_b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.segments.Segments.calculate_distance" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments.Segments.compute_data">
+<span class="sig-name descname"><span class="pre">compute_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">computed_ways</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">not_computed_ways</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.segments.Segments.compute_data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments.Segments.compute_way">
+<span class="sig-name descname"><span class="pre">compute_way</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">way</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.auxiliar_modules.html#pipeline.auxiliar_modules.auxiliar_classes.Way" title="pipeline.auxiliar_modules.auxiliar_classes.Way"><span class="pre">Way</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.segments.Segment" title="pipeline.tables.segments.Segment"><span class="pre">Segment</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.segments.Segments.compute_way" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments.Segments.compute_ways_and_generate_segments">
+<span class="sig-name descname"><span class="pre">compute_ways_and_generate_segments</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">way_ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.segments.Segment" title="pipeline.tables.segments.Segment"><span class="pre">Segment</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.segments.Segments.compute_ways_and_generate_segments" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments.Segments.drop">
+<span class="sig-name descname"><span class="pre">drop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.segments.Segments.drop" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments.Segments.generate_dictionaries">
+<span class="sig-name descname"><span class="pre">generate_dictionaries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">computed_segments</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.segments.Segment" title="pipeline.tables.segments.Segment"><span class="pre">Segment</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.segments.Segments.generate_dictionaries" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments.Segments.generate_id">
+<span class="sig-name descname"><span class="pre">generate_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">way</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.auxiliar_modules.html#pipeline.auxiliar_modules.auxiliar_classes.Way" title="pipeline.auxiliar_modules.auxiliar_classes.Way"><span class="pre">Way</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.auxiliar_modules.html#pipeline.auxiliar_modules.auxiliar_classes.Node" title="pipeline.auxiliar_modules.auxiliar_classes.Node"><span class="pre">Node</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pipeline.auxiliar_modules.html#pipeline.auxiliar_modules.auxiliar_classes.Node" title="pipeline.auxiliar_modules.auxiliar_classes.Node"><span class="pre">Node</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#pipeline.tables.segments.Segments.generate_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments.Segments.generate_segments_for_a_trip">
+<span class="sig-name descname"><span class="pre">generate_segments_for_a_trip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">not_computed_way_ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.segments.Segment" title="pipeline.tables.segments.Segment"><span class="pre">Segment</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.segments.Segments.generate_segments_for_a_trip" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments.Segments.get_segments_by_id">
+<span class="sig-name descname"><span class="pre">get_segments_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seg_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pipeline.tables.segments.Segment" title="pipeline.tables.segments.Segment"><span class="pre">Segment</span></a></span></span><a class="headerlink" href="#pipeline.tables.segments.Segments.get_segments_by_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments.Segments.get_segments_in_a_way">
+<span class="sig-name descname"><span class="pre">get_segments_in_a_way</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">way_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.segments.Segment" title="pipeline.tables.segments.Segment"><span class="pre">Segment</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.segments.Segments.get_segments_in_a_way" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments.Segments.insert_into_db">
+<span class="sig-name descname"><span class="pre">insert_into_db</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.segments.Segments.insert_into_db" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.segments.Segments.segments">
+<span class="sig-name descname"><span class="pre">segments</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.segments.Segment" title="pipeline.tables.segments.Segment"><span class="pre">Segment</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.tables.segments.Segments.segments" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.segments.Segments.segments_per_id">
+<span class="sig-name descname"><span class="pre">segments_per_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#pipeline.tables.segments.Segments.segments_per_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.segments.Segments.segments_per_way">
+<span class="sig-name descname"><span class="pre">segments_per_way</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#pipeline.tables.segments.Segments.segments_per_way" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pipeline.tables.segments.parse_segments">
+<span class="sig-prename descclassname"><span class="pre">pipeline.tables.segments.</span></span><span class="sig-name descname"><span class="pre">parse_segments</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">segment_rows</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.segments.Segment" title="pipeline.tables.segments.Segment"><span class="pre">Segment</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.segments.parse_segments" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-pipeline.tables.segments_properties">
+<span id="pipeline-tables-segments-properties-module"></span><h2>pipeline.tables.segments_properties module<a class="headerlink" href="#module-pipeline.tables.segments_properties" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.tables.segments_properties.SegmentProperty">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.tables.segments_properties.</span></span><span class="sig-name descname"><span class="pre">SegmentProperty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.segments_properties.SegmentProperty" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments_properties.SegmentProperty.calculate_value">
+<span class="sig-name descname"><span class="pre">calculate_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">segment</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.segments_properties.SegmentProperty.calculate_value" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments_properties.SegmentProperty.get_db_row">
+<span class="sig-name descname"><span class="pre">get_db_row</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.segments_properties.SegmentProperty.get_db_row" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pipeline.tables.segments_properties.SegmentsProperties">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pipeline.tables.segments_properties.</span></span><span class="sig-name descname"><span class="pre">SegmentsProperties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.segments_properties.SegmentsProperties" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments_properties.SegmentsProperties.compute_data">
+<span class="sig-name descname"><span class="pre">compute_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">computed_ways</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">not_computed_ways</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.segments_properties.SegmentsProperties.compute_data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments_properties.SegmentsProperties.drop">
+<span class="sig-name descname"><span class="pre">drop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.segments_properties.SegmentsProperties.drop" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments_properties.SegmentsProperties.generate_segments_properties">
+<span class="sig-name descname"><span class="pre">generate_segments_properties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ways_to_compute</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.segments_properties.SegmentProperty" title="pipeline.tables.segments_properties.SegmentProperty"><span class="pre">SegmentProperty</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.segments_properties.SegmentsProperties.generate_segments_properties" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments_properties.SegmentsProperties.get_segment_property">
+<span class="sig-name descname"><span class="pre">get_segment_property</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">property_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#pipeline.tables.segments_properties.SegmentsProperties.get_segment_property" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments_properties.SegmentsProperties.get_segments_properties_types_classes">
+<span class="sig-name descname"><span class="pre">get_segments_properties_types_classes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.segments_properties.SegmentsProperties.get_segments_properties_types_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pipeline.tables.segments_properties.SegmentsProperties.insert_into_db">
+<span class="sig-name descname"><span class="pre">insert_into_db</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.tables.segments_properties.SegmentsProperties.insert_into_db" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.segments_properties.SegmentsProperties.segment_properties">
+<span class="sig-name descname"><span class="pre">segment_properties</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.segments_properties.SegmentProperty" title="pipeline.tables.segments_properties.SegmentProperty"><span class="pre">SegmentProperty</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.tables.segments_properties.SegmentsProperties.segment_properties" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.segments_properties.SegmentsProperties.segment_properties_in_db">
+<span class="sig-name descname"><span class="pre">segment_properties_in_db</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.segments_properties.SegmentProperty" title="pipeline.tables.segments_properties.SegmentProperty"><span class="pre">SegmentProperty</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.tables.segments_properties.SegmentsProperties.segment_properties_in_db" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pipeline.tables.segments_properties.SegmentsProperties.segment_properties_to_insert">
+<span class="sig-name descname"><span class="pre">segment_properties_to_insert</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.segments_properties.SegmentProperty" title="pipeline.tables.segments_properties.SegmentProperty"><span class="pre">SegmentProperty</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#pipeline.tables.segments_properties.SegmentsProperties.segment_properties_to_insert" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pipeline.tables.segments_properties.parse_segment_properties">
+<span class="sig-prename descclassname"><span class="pre">pipeline.tables.segments_properties.</span></span><span class="sig-name descname"><span class="pre">parse_segment_properties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">segment_properties_rows</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pipeline.tables.segments_properties.SegmentProperty" title="pipeline.tables.segments_properties.SegmentProperty"><span class="pre">SegmentProperty</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pipeline.tables.segments_properties.parse_segment_properties" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-pipeline.tables">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pipeline.tables" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Sergi Doce.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
