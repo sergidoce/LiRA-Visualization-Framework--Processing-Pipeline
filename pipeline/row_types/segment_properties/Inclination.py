@@ -24,7 +24,7 @@ class Inclination(SegmentProperty):
     
 
     def get_elevation(self, point: List[float]) -> float:
-        return 1;
+        
         url = 'https://services.datafordeler.dk/DHMTerraen/DHMKoter/1.0.0/GEOREST/HentKoter?format=json&username={id}&password={pwd}&geop=POINT({lat} {lon})&georef=EPSG:4326'.format(
             id=os.getenv('KOTER_USER'), 
             pwd = os.getenv('KOTER_PWD'),
